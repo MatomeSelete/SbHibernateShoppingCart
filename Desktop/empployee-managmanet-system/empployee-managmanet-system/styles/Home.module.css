@@ -1,129 +1,318 @@
+
 .container {
-  padding: 0 2rem;
+
 }
 
-.main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+/* ==========================  Head =============================== */
+
+.heads {
+  background-color: red;
+  width: 100%;
+  height: 10vh;
 }
+
+/* ========================== Main content =============================== */
+.main {
+  display: flex;
+  background-color: blue;
+  width: 100%;
+}
+
+.main, .sideBar{
+  height: 85vh;
+}
+
+.sideBar {
+background-color: black;
+width: 20%;
+margin-left: auto;
+  margin-right: auto;
+}
+
+.sideBarbtn {
+  /* border: 2px solid black;
+  margin-left: auto;
+  margin-right: auto; */
+}
+
+.sideBarbtn h3 {
+  border: 3px solid black;
+  background-color: whitesmoke;
+  color: black;
+  text-align: center;
+  border-radius: 8px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sideBarbtn h3:hover {
+  border: 3px solid black;
+  background-color: whitesmoke;
+  color: black;
+  text-align: center;
+  border-radius: 8px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+.window {
+  background-color: orange;
+  width: 80%;
+}
+
+.windowMain {
+  height: 79vh;
+  overflow:scroll;
+  overflow-x:hidden;
+}
+
+/* ========================== Footer content =============================== */
 
 .footer {
+  background-color: white;
+  color: black;
+  width: 100%;
+  height: 5vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.steps {
   display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
+  width: 100%;
   align-items: center;
+  position: relative;
+  justify-content: space-between;
+  z-index: 1;
 }
 
-.footer a {
+.steps .circle {
   display: flex;
-  justify-content: center;
   align-items: center;
-  flex-grow: 1;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  color: #999;
+  font-size: 22px;
+  font-weight: 500;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 4px solid #e0e0e0;
 }
 
-.title a {
-  color: #0070f3;
-  text-decoration: none;
+.steps .circle.active{
+  border-color: #4070f4;
+  color: #4070f4;
 }
 
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
+.steps .progressBar {
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  border: 4px solid #e0e0e0;
+  z-index: -1;
+}
+.progressBar .indicator {
+  /* border: #4070f4 solid 4px; */
+  position: absolute;
+  height: 3px;
+  width: 33%;
+  background: #4070f4;
 }
 
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
 
-.title,
-.description {
+
+
+
+
+
+
+
+
+
+
+
+
+.programes {
+  background-color: white;
+  /* border: 1px solid red; */
+  width: 100%;
   text-align: center;
+  margin: 2%;
+  margin-bottom: 8%;
+  /* margin-left: 10%; */
 }
 
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
+.multiStepForm {
+  /* border: 2px solid red; */
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  height: auto;
+  border-radius: 3%;
 }
 
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
+
+.form {
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.grid {
+.formLabel {
+  margin: 5% 0%;
+  /* text-align: center; */
+  /* border: 2px solid red; */
+  width: 100%;
+}
+
+.froms {
+  height: 65vh;
+  margin: 2%;
+} 
+
+
+.Nextbtn, .Backbtn {
+  background-color: #01317f;
+  color: #ebc2ff;
+  margin-bottom: 4%;
+}
+
+.mainForms {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
 }
 
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
+.leftSquare {
+  width: 25px;
+  height: 25px;
+  rotate: 20deg;
+  background-color: #14cfb2;
+  margin-top: 5%;
+  margin-right: 7%; 
 }
 
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+.rightSquare {
+  width: 25px;
+  height: 25px;
+  rotate: 20deg;
+  left: -200px;
+  background-color: #c95eff;
+  margin-top: 5%;
 }
 
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
 
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
-}
-
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .Nextbtn, .Backbtn {
+      background-color: #01317f;
+      color: #ebc2ff;
+      margin-top: 8%;
+      margin-bottom: 4%;
   }
+  
 }
 
-@media (prefers-color-scheme: dark) {
-  .card,
-  .footer {
-    border-color: #222;
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  
+  
+
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+  .multiStepForm {
+      margin-left: auto;
+      margin-right: auto;
+      width: 70%;
+      height: auto;
+      border-radius: 3%;
   }
-  .code {
-    background: #111;
+
+  .formGroup {
+      width: 280px;
   }
-  .logo img {
-    filter: invert(1);
+
+  .formLabel {
+      margin: 5% 0%;
+      /* text-align: center; */
+      /* border: 2px solid red; */
+      width: 200%;
   }
+  
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .formGroup {
+      /* border: 2px solid red;  */
+      width: 390px;
+  }
+
+  .forms {
+      margin-left: auto;
+      margin-right: auto;
+ } 
+
+ .multiStepForm {
+  /* border: 2px solid red; */
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  height: auto;
+  border-radius: 3%;
+}
+
+.formLabel {
+  margin: 5% 0%;
+  /* text-align: center; */
+  /* border: 2px solid red; */
+  width: 200%;
+}
+
+
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+  .formGroup {
+      width: 490px;
+  }
+
+  .forms {
+      margin-left: auto;
+      margin-right: auto;
+ } 
+
+ .formLabel {
+  margin: 5% 0%;
+  /* text-align: center; */
+  /* border: 2px solid red; */
+  width: 200%;
+}
+
 }
