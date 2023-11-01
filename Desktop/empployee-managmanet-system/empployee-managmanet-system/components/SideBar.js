@@ -15,9 +15,9 @@ function SideBar() {
         <div className={` ${styles.sideBarbtn}`} >
            {/* <h1>side component</h1> */}
 
-            <h3>View employees</h3>
-            <h3>Add Employee</h3>
-            <h3>Add</h3>
+            <h3 className={`${styles.h3btns}`} >View employees</h3>
+            <h3 className={`${styles.h3btns}`} >Add Employee</h3>
+            <h3 className={`${styles.h3btns}`} >Add</h3>
 
 
         </div>
