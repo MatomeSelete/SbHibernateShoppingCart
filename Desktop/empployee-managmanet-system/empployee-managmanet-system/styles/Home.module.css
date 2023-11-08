@@ -1,12 +1,10 @@
 
-/* .container {
-
-} */
-
 /* ==========================  Head =============================== */
 
 .heads {
-  background-color: red;
+  background-color: white;
+  color: black;
+  text-align: center;
   width: 100%;
   height: 10vh;
 }
@@ -44,6 +42,14 @@ margin-left: auto;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
+}
+
+.cards {
+  /* display: flex; */
+  border: 1px solid black;
+  background-color: whitesmoke;
+  color: black;
+  margin: 2%;
 }
 
 .card {
@@ -97,217 +103,18 @@ margin-left: auto;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.steps {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  position: relative;
-  justify-content: space-between;
-  z-index: 1;
-}
-
-.steps .circle {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 50px;
-  width: 50px;
-  color: #999;
-  font-size: 22px;
-  font-weight: 500;
-  border-radius: 50%;
-  background-color: #fff;
-  border: 4px solid #e0e0e0;
-}
-
-.steps .circle.active{
-  border-color: #4070f4;
-  color: #4070f4;
-}
-
-.steps .progressBar {
-  position: absolute;
-  height: 4px;
-  width: 100%;
-  border: 4px solid #e0e0e0;
-  z-index: -1;
-}
-.progressBar .indicator {
-  /* border: #4070f4 solid 4px; */
-  position: absolute;
-  height: 3px;
-  width: 33%;
-  background: #4070f4;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.programes {
-  background-color: white;
-  /* border: 1px solid red; */
-  width: 100%;
-  text-align: center;
-  margin: 2%;
-  margin-bottom: 8%;
-  /* margin-left: 10%; */
-}
-
-.multiStepForm {
-  /* border: 2px solid red; */
-  margin-left: auto;
-  margin-right: auto;
-  width: 70%;
-  height: auto;
-  border-radius: 3%;
-}
-
-
-.form {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.formLabel {
-  margin: 5% 0%;
-  /* text-align: center; */
-  /* border: 2px solid red; */
-  width: 100%;
-}
-
-.froms {
-  height: 65vh;
-  margin: 2%;
-} 
-
-
-.Nextbtn, .Backbtn {
-  background-color: #01317f;
-  color: #ebc2ff;
-  margin-bottom: 4%;
-}
-
-.mainForms {
-  display: flex;
-}
-
-.leftSquare {
-  width: 25px;
-  height: 25px;
-  rotate: 20deg;
-  background-color: #14cfb2;
-  margin-top: 5%;
-  margin-right: 7%; 
-}
-
-.rightSquare {
-  width: 25px;
-  height: 25px;
-  rotate: 20deg;
-  left: -200px;
-  background-color: #c95eff;
-  margin-top: 5%;
-}
-
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  .Nextbtn, .Backbtn {
-      background-color: #01317f;
-      color: #ebc2ff;
-      margin-top: 8%;
-      margin-bottom: 4%;
-  }
-  
-}
-
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  
-  
 
 }
-
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-
-  .multiStepForm {
-      margin-left: auto;
-      margin-right: auto;
-      width: 70%;
-      height: auto;
-      border-radius: 3%;
-  }
-
-  .formGroup {
-      width: 280px;
-  }
-
-  .formLabel {
-      margin: 5% 0%;
-      /* text-align: center; */
-      /* border: 2px solid red; */
-      width: 200%;
-  }
-  
 
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  .formGroup {
-      /* border: 2px solid red;  */
-      width: 390px;
-  }
-
-  .forms {
-      margin-left: auto;
-      margin-right: auto;
- } 
-
- .multiStepForm {
-  /* border: 2px solid red; */
-  margin-left: auto;
-  margin-right: auto;
-  width: 70%;
-  height: auto;
-  border-radius: 3%;
-}
-
-.formLabel {
-  margin: 5% 0%;
-  /* text-align: center; */
-  /* border: 2px solid red; */
-  width: 200%;
-}
 
 
 
@@ -316,20 +123,212 @@ margin-left: auto;
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
 
-  .formGroup {
-      width: 490px;
-  }
 
-  .forms {
-      margin-left: auto;
-      margin-right: auto;
- } 
 
- .formLabel {
-  margin: 5% 0%;
-  /* text-align: center; */
-  /* border: 2px solid red; */
-  width: 200%;
+/* ==========================  Head =============================== */
+
+/* .heads {
+  background-color: red;
+  width: 100%;
+  height: 10vh;
+} */
+
+/* ========================== Main content =============================== */
+.main {
+  display: flex;
+  background-color: blue;
+  width: 100%;
 }
 
+.main, .sideBar{
+  height: 85vh;
 }
+
+.sideBar {
+background-color: black;
+width: 20%;
+margin-left: auto;
+  margin-right: auto;
+}
+
+.sideBarbtn {
+  /* border: 2px solid black;
+  margin-left: auto;
+  margin-right: auto; */
+}
+
+.sideBarbtn h3 {
+  border: 3px solid black;
+  background-color: whitesmoke;
+  color: black;
+  text-align: center;
+  border-radius: 8px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cards {
+  display: flex;
+  border: 1px solid black;
+  background-color: whitesmoke;
+  color: black;
+  margin: 1%;
+}
+
+.card {
+  margin-top: 1%;
+  width: 90%;
+  height: 90vh;
+  border: 2px solid white;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.crdProfile {
+  margin-top: 4%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* .h3btns:hover {
+  box-shadow: rgba(255, 255, 255, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+} */
+
+
+.window {
+  background-color: orange;
+  width: 80%;
+}
+
+.windowMain {
+  height: 79vh;
+  overflow:scroll;
+  overflow-x:hidden;
+}
+
+.Profileimg {
+  padding: 1%;
+  width: 30%;
+  height: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25%;
+}
+
+/* ========================== Footer content =============================== */
+
+.footer {
+  background-color: white;
+  color: black;
+  width: 100%;
+  height: 5vh;
+  
+}
+
+
+}
+
+
+
+/* ==========================  Head =============================== */
+
+/* .heads {
+  background-color: red;
+  width: 100%;
+  height: 10vh;
+} */
+
+/* ========================== Main content =============================== */
+/* .main {
+  display: flex;
+  background-color: blue;
+  width: 100%;
+}
+
+.main, .sideBar{
+  height: 85vh;
+}
+
+.sideBar {
+background-color: black;
+width: 20%;
+margin-left: auto;
+  margin-right: auto;
+}
+
+.sideBarbtn {
+  /* border: 2px solid black;
+  margin-left: auto;
+  margin-right: auto; *
+}
+
+.sideBarbtn h3 {
+  border: 3px solid black;
+  background-color: whitesmoke;
+  color: black;
+  text-align: center;
+  border-radius: 8px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cards {
+  display: flex;
+  border: 1px solid black;
+  background-color: whitesmoke;
+  color: black;
+  margin: 1%;
+}
+
+.card {
+  margin-top: 1%;
+  width: 90%;
+  height: 90vh;
+  border: 2px solid white;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.crdProfile {
+  margin-top: 4%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.h3btns:hover {
+  box-shadow: rgba(255, 255, 255, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+} *
+
+
+.window {
+  background-color: orange;
+  width: 80%;
+}
+
+.windowMain {
+  height: 79vh;
+  overflow:scroll;
+  overflow-x:hidden;
+}
+
+.Profileimg {
+  padding: 1%;
+  width: 30%;
+  height: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25%;
+}
+
+/* ========================== Footer content =============================== *
+
+.footer {
+  background-color: white;
+  color: black;
+  width: 100%;
+  height: 5vh;
+  
+}
+ */

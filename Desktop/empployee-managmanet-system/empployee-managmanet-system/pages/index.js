@@ -2,6 +2,7 @@ import Head from 'next/head'
 // import Image from 'next/image'
 import SideBar from "../components/SideBar"
 import Employees from "../components/Employees"
+import TopDash from "/Users/da_m1_35/Desktop/empployee-managmanet-system/empployee-managmanet-system/components/TopDash.js"
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -30,7 +31,8 @@ export default function Home() {
           </div>
           <div className={`${styles.window}`}>
             <h1>content</h1>
-            <Employees />
+            <TopDash />
+            {/* <Employees /> */}
           </div>
 
         </div>
