@@ -1,55 +1,67 @@
+import React, { useState, useEffect } from 'react';
+import styles from '../styles/Home.module.css';
 
+const Profile = () => {
+  // Define initial profile data
+  const [profileData, setProfileData] = useState({
+    name: 'John Doe',
+    email: 'johndoe@company.com',
+    phone: '123-456-7890',
+    jobTitle: 'Marketing Manager',
+    department: 'Marketing',
+    skills: [
+      'Organization',
+      'Creativity',
+      'Leadership',
+      'Team Building',
+      'SEO',
+      'Social Media',
+      'Content Management',
+      'Data Analysis',
+    ],
+  });
 
-// import getConfig from 'next/config'
-import { useState } from 'react'
-// import { setCookie } from 'nookies'
-import Router from 'next/router'
-import styles from "/Users/da_m1_35/Desktop/empployee-managmanet-system/empployee-managmanet-system/styles/Home.module.css"
+  // Simulate fetching the profile data from an API or database
+  useEffect(() => {
+    // You can fetch the data from an API or database here and update the profileData state.
+  }, []);
 
-function Profile() {
-    return (
-        <div className={`${styles.card}`}>
-
-            <div class={`card  w-50 mb-3 ${styles.crdProfile}`}>
-                <img src="https://static.vecteezy.com/system/resources/thumbnails/002/534/006/small/social-media-chatting-online-blank-profile-picture-head-and-body-icon-people-standing-icon-grey-background-free-vector.jpg" class= {`card-img-top ${styles.Profileimg}`} alt="..." />
-                <h5 class="card-title">Employee name: John Doe</h5>
-                <div class="card-body">
-                    <div>
-                        <label> Basic Information:</label>
-                        <p class="card-title">Employee name: John Doe</p>
-                    </div>
-                    <div>
-                        <label>Contact Information:</label>
-                        <p class="card-text"> Email address: johndoe@company.com </p>
-                        <p class="card-text"> Phone number: 123-456-7890. </p>
-                    </div>
-                    <div>
-                        <label>Job Title and Department:</label>
-                        <p class="card-text"> Job Title (e.g., Software Engineer, Marketing Manager) </p>
-                        <p class="card-text"> Department or Team (e.g., Engineering, Sales) </p>
-                    </div>
-                    <div>
-                    <label>Job Description:</label>
-                        <p class="card-text"> Job Title (e.g., Software Engineer, Marketing Manager) </p>
-                        <p class="card-text"> Department or Team (e.g., Engineering, Sales) </p>
-                    </div>
-                    
-
-                    <div>
-                        <p class="card-text"> Professional skills: </p>
-                    </div>
-                </div>
-            </div>
-
+  return (
+    <div className={`${styles.card}`}>
+      <div className={`card w-50 mb-3 ${styles.crdProfile}`}>
+        <img
+          src="https://static.vecteezy.com/system/resources/thumbnails/002/534/006/small/social-media-chatting-online-blank-profile-picture-head-and-body-icon-people-standing-icon-grey-background-free-vector.jpg"
+          className={`card-img-top ${styles.Profileimg}`}
+          alt="Profile Picture"
+        />
+        <h5 className="card-title">Employee name: {profileData.name}</h5>
+        <div className="card-body">
+          <div>
+            <label>Basic Information:</label>
+            <p className="card-text">Employee name: {profileData.name}</p>
+          </div>
+          <div>
+            <label>Contact Information:</label>
+            <p className="card-text">Email address: {profileData.email}</p>
+            <p className="card-text">Phone number: {profileData.phone}</p>
+          </div>
+          <div>
+            <label>Job Title and Department:</label>
+            <p className="card-text">Job Title: {profileData.jobTitle}</p>
+            <p className="card-text">Department: {profileData.department}</p>
+          </div>
+          <div>
+            <label>Professional skills:</label>
+            <ul>
+              {profileData.skills.map((skill, index) => (
+                <li key={index}>{skill}</li>
+              ))}
+            </ul>
+          </div>
         </div>
-    )
-}
+      </div>
+    </div>
+  );
+};
 
 export default Profile;
-
-// Employee name: John Doe.
-// Location: Chicago office.
-// Email address: johndoe@company.com.
-// Phone number: 123-456-7890.
-// Job title: Marketing manager.
-// Professional skills: Organization, creativity, leadership, team building, SEO, social media, content management, data analysis.

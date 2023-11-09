@@ -31,8 +31,8 @@ export default function Home() {
           </div>
           <div className={`${styles.window}`}>
             <h1>content</h1>
-            <TopDash />
-            {/* <Employees /> */}
+            <TopDash /> 
+            <Employees />
           </div>
 
         </div>
