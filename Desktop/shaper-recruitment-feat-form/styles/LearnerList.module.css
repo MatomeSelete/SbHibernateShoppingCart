@@ -1,0 +1,59 @@
+.maincards {
+    flex-wrap: wrap;
+}
+
+.cohorts {
+    /* margin-top: 1%; */
+    /* background: #C655FF; */
+    flex-shrink: 0;
+}
+
+.cohortsUI {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.cohortsLI {
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    padding: 1%;
+    width: 10%;
+    margin: 2%;
+    text-align: center;
+}
+
+.cohortsLI:hover { 
+    background-color: white;
+    color: black;
+}
+
+
+.maincard {
+    border: 1px solid red;
+}
+
+
+.cards {
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    width: 90%;
+}
+
+.card {
+    display: flex;
+   width: 20%;
+    flex-wrap: wrap;
+    margin: 2%;
+}
+
+.search {
+    width: auto;
+    display: flex;
+}
+
+.searchinput {
+    /* width: 0%; */
+}

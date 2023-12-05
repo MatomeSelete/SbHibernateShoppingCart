@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300&family=Quicksand:wght@500&display=swap');
+
+html,
+h1,
+h2, 
+.formLabel,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lexend', sans-serif;
+    /* height: 100vh; */
+    width: 100%;
+}

@@ -1,0 +1,683 @@
+.portfolioBody {
+    /* background-color: whitesmoke; */
+
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+
+.head {
+    width: 100%;
+    height: auto;
+    display: flex;
+
+    .profilepic {
+        width: 40%;
+        height: auto;
+
+        .profileBtns {
+            background: #C655FF;
+
+            .gitLinkBtns {
+                width: 80%;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .LinkBtns {
+                margin-right: -24%;
+            }
+
+            .downloadBtns,
+            .gitLinkBtns,
+            .LinkBtns {
+                background: #C655FF;
+
+            }
+
+            .downloadBtns {
+                color: white;
+            }
+
+            .downloadBtns:hover,
+            .gitLinkBtns:hover,
+            .LinkBtns:hover {
+                color: #E8EFCC;
+            }
+        }
+    }
+
+    .NameSkillset {
+        width: 100%;
+        margin: 1%;
+    }
+
+    .skillset {
+        width: 100%;
+        height: 15%;
+        margin-top: 30%;
+    }
+
+    .FinalComments {
+        margin-top: 30dvh;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        height: 15vh;
+        flex-shrink: 0;
+        margin-top: 15%;
+    }
+}
+
+
+.Body {
+    display: flex;
+    width: 100%;
+    height: 78dvh;
+    /* margin-bottom: 10%; */
+
+    .Skills {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10%;
+        width: 100%;
+        height: 45dvh;
+
+
+        .skillBlock {
+            display: inline;
+        }
+
+        .softSkillBlock {
+            margin-top: 38%;
+        }
+
+        .projectBlock {
+            margin-top: 38%;
+        }
+    }
+
+
+    .TechSkills {
+        display: flex;
+        width: 100%;
+        height: 30dvh;
+    }
+
+    .SoftSkills {
+        display: flex;
+        vertical-align: middle;
+        line-height: 90px;
+        width: 100%;
+        height: 20dvh;
+    }
+
+    .softBlock {
+        background: #01317F;
+        color: #E8EFCC;
+        text-align: center;
+        font-family: Lexend;
+        font-size: 55px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+    }
+
+    .tecBlock {
+        background: #FF7900;
+        color: #E8EFCC;
+        text-align: center;
+        font-family: Lexend;
+        font-size: 55px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        width: 40%;
+    }
+
+
+
+
+
+}
+
+.projects {
+    width: 100%;
+    height: 30dvh;
+
+
+    /* .screen {
+        display: flex;
+    } */
+
+    .ProjectBlocks {
+        display: block;
+        justify-content: space-between;
+    }
+
+
+
+
+    .ProjectBlocks {
+        margin-top: 8%;
+        display: flex;
+        width: 100%;
+        height: 20dvh;
+    }
+
+    .ProjectBlock1 {
+        background: #c655ff;
+
+    }
+
+    .ProjectBlock2 {
+        background: #00c8b0;
+    }
+
+    .ProjectBlock3 {
+        background: #FF7900;
+    }
+
+    .skillsTags {
+        color: #E8EFCC;
+        text-align: center;
+        font-family: Lexend;
+        font-size: 55px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        width: 100%;
+        height: 100px;
+        padding-top: 20%;
+        text-align: center;
+
+    }
+}
+
+.ProjectBlock1,
+.ProjectBlock2,
+.ProjectBlock3 {
+    width: 30%;
+    height: 100%;
+    flex-shrink: 0;
+}
+
+
+.tecBlock,
+.softBlock,
+.projectBlock {
+    width: 40%;
+    height: 28vh;
+    flex-shrink: 0;
+}
+
+
+/*===================================== components styles ====================================================*/
+
+.namesComponents {
+    flex-wrap: wrap;
+    width: 100%;
+    height: 3dvh;
+    font-size: 12px;
+    padding-top: 2%;
+}
+
+.SkillsetComponent {
+    width: 100%;
+    height: 3dvh;
+
+
+
+    .SkillsetComponentUI {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 2px;
+
+    }
+
+
+    .SkillsetComponentLI {
+        margin: 0.5%;
+        width: 150px;
+        height: 47px;
+        flex-shrink: 0;
+        background-color: #01317F;
+        color: #C655FF;
+        border-radius: 10px;
+        border: 2px solid #C655FF;
+        background: rgba(1, 49, 127, 0.00);
+    }
+
+}
+
+
+.techSkillsComponents {
+    width: 100%;
+    height: 1vh;
+
+    .techSkillsComponentsP {
+        display: flex;
+        color: #01317F;
+        font-family: Lexend Deca;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    /* .mostimproved {
+
+   } */
+
+    .techead {
+        color: #C655FF;
+        font-size: x-large;
+        font-weight: 900;
+    }
+
+
+    .bar {
+        width: 100%;
+        height: 30px;
+        border-radius: 10px;
+        background-color: #b4b0b0;
+        color: #e8efcc;
+        text-align: center;
+    }
+
+    .fifty {
+        width: 15%;
+        height: 100%;
+        background-color: #C655FF;
+        float: left;
+        margin-left: 1px;
+
+    }
+
+    .fourty {
+        width: 15%;
+        height: 100%;
+        background-color: #C655FF;
+        float: left;
+        margin-left: 1px;
+
+    }
+
+    .thirthy {
+        width: 15%;
+        height: 100%;
+        background-color: #C655FF;
+        float: left;
+        margin-left: 1px;
+
+    }
+
+    .twenty {
+        width: 15%;
+        height: 100%;
+        background-color: #C655FF;
+        float: left;
+        margin-left: 1px;
+
+    }
+
+    .ten {
+        width: 15%;
+        height: 100%;
+        background-color: #C655FF;
+        float: left;
+        margin-left: 1px;
+    }
+
+
+
+    .fiftyx {
+        width: 15%;
+        height: 100%;
+        background-color: rgb(145, 152, 145);
+        float: left;
+        margin-left: 1px;
+
+    }
+
+    .fourtyx {
+        width: 15%;
+        height: 100%;
+        background-color: rgb(145, 152, 145);
+        float: left;
+        margin-left: 1px;
+
+    }
+
+    .thirthyx {
+        width: 15%;
+        height: 100%;
+        background-color: rgb(145, 152, 145);
+        float: left;
+        margin-left: 1px;
+
+    }
+
+    .twentyx {
+        width: 15%;
+        height: 100%;
+        background-color: rgb(145, 152, 145);
+        float: left;
+        margin-left: 1px;
+
+    }
+
+    .tenx {
+        width: 15%;
+        height: 100%;
+        background-color: rgb(145, 152, 145);
+        float: left;
+        margin-left: 1px;
+    }
+
+    .tbody,
+        .thead {
+            border-bottom: #C655FF 2px solid;
+        }
+
+
+        .tablesHead {
+            border-bottom: #C655FF 4px solid;
+            }
+        
+            .tbody {
+                border-bottom: #C655FF 4px solid;
+                width: 100%;
+            }
+
+            .tecHead {
+                color: #C655FF;
+            }
+        
+            .tablesHead,
+            .tables {
+                display: flex;
+                width: 100%;
+                height: auto;
+                display: flex;
+                justify-content: space-between;
+                
+        
+                .softSkillsHead,
+                .ScoreHead,
+                .Score,
+                .softSkills {
+                    width: 40%;
+                    flex-wrap: wrap;
+                }
+        
+                .DetailsHead,
+                .Details,
+                .Details {
+                    width: 20%;
+                }
+            }
+        
+    
+
+
+
+
+}
+
+.softSkillsComponents {
+    width: 100%;
+    height: 1dvh;
+
+    .techSkillsComponentsP {
+        display: flex;
+        color: #01317F;
+        font-family: Lexend Deca;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .softhead {
+        font-size: x-large;
+        color: #00c8b0;
+    }
+
+
+    .bar {
+        width: 100%;
+        height: 30px;
+        border-radius: 10px;
+        background-color: #b4b0b0;
+        color: #e8efcc;
+        text-align: center;
+    }
+
+    .fifty {
+        width: 15%;
+        height: 100%;
+        background-color: #00c8b0;
+        float: left;
+        margin-left: 1px;
+
+    }
+
+    .fourty {
+        width: 15%;
+        height: 100%;
+        background-color: #00c8b0;
+        float: left;
+        margin-left: 1px;
+
+    }
+
+    .thirthy {
+        width: 15%;
+        height: 100%;
+        background-color: #00c8b0;
+        float: left;
+        margin-left: 1px;
+
+    }
+
+    .twenty {
+        width: 15%;
+        height: 100%;
+        background-color: #00c8b0;
+        float: left;
+        margin-left: 1px;
+
+    }
+
+    .ten {
+        width: 15%;
+        height: 100%;
+        background-color: #00c8b0;
+        float: left;
+        margin-left: 1px;
+    }
+
+
+
+    .fiftyx {
+        width: 15%;
+        height: 100%;
+        background-color: rgb(145, 152, 145);
+        float: left;
+        margin-left: 1px;
+
+    }
+
+    .fourtyx {
+        width: 15%;
+        height: 100%;
+        background-color: rgb(145, 152, 145);
+        float: left;
+        margin-left: 1px;
+
+    }
+
+    .thirthyx {
+        width: 15%;
+        height: 100%;
+        background-color: rgb(145, 152, 145);
+        float: left;
+        margin-left: 1px;
+
+    }
+
+    .twentyx {
+        width: 15%;
+        height: 100%;
+        background-color: rgb(145, 152, 145);
+        float: left;
+        margin-left: 1px;
+
+    }
+
+    .tenx {
+        width: 15%;
+        height: 100%;
+        background-color: rgb(145, 152, 145);
+        float: left;
+        margin-left: 1px;
+    }
+
+    .mostimproved {
+        background: #00c8b0;
+        color: #E8EFCC;
+        text-align: center;
+        border-radius: 10px;
+        width: auto;
+        height: auto;
+        flex-shrink: 0;
+    }
+
+   
+
+    .tablesHead {
+    border-bottom: #00c8b0 4px solid;
+    }
+
+    .tbody {
+        border-bottom: #00c8b0 4px solid;
+        width: 100%;
+    }
+
+    .softHead {
+        color: #00c8b0;
+    }
+
+    .tablesHead,
+    .tables {
+        display: flex;
+        width: 100%;
+        height: auto;
+        /* border: 2px solid red; */
+        display: flex;
+        justify-content: space-between;
+        
+
+        .softSkillsHead,
+        .ScoreHead,
+        .Score,
+        .softSkills {
+            /* border: 2px solid red; */
+            width: 40%;
+            flex-wrap: wrap;
+        }
+
+        .DetailsHead,
+        .Details,
+        .Details {
+            /* border: 2px solid red; */
+            width: 20%;
+        }
+    }
+
+
+
+}
+
+
+.projectBlock {
+    width: 100%;
+}
+
+.projectsComponents {
+    width: 100%;
+    margin-bottom: 10%;
+
+}
+
+
+.projectdisplay {
+    display: flex;
+}
+
+.projectshead {
+    color: #FF7900;
+    border-bottom: #FF7900 2px solid;
+    margin-bottom: 1%;
+}
+
+.Screens {
+    width: 30%;
+}
+
+.aboutProject {
+    width: 65%;
+
+    justify-content: flex-end;
+}
+
+.projectBlock {
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.viewbts {
+    background-color: #FF7900;
+    color: #E8EFCC;
+    border-radius: 4%;
+    align-items: center;
+}
+
+
+.infoBlocks {
+    display: flex;
+}
+
+.infoBlock {
+    background: #C655FF;
+    width: 22px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+.skillssetBlock,
+.ShaperReviewBlock {
+    margin-top: 1%;
+    background: #C655FF;
+    width: 22px;
+    height: 25px;
+    flex-shrink: 0;
+}
+
+.mostimproved {
+    color: #E8EFCC;
+    text-align: center;
+    border-radius: 10px;
+    background: #C655FF;
+    flex-shrink: 0;
+}
+
+.card {
+    border: none;
+}
